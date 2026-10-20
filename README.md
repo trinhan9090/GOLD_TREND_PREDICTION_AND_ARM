@@ -234,7 +234,7 @@ Các chỉ số bổ sung:
 - Brier Score
 - Expected Calibration Error (ECE)
 
-Accuracy không được sử dụng một mình vì tỷ lệ lớp `Up` tăng khi horizon dài hơn. Ở H20, lớp Up chiếm phần lớn tập Test, nên một mô hình chỉ dự đoán Up cũng có thể đạt Accuracy cao nhưng Balanced Accuracy gần 0.5.
+Accuracy không được sử dụng một mình vì lớp `Up` chiếm ưu thế ở cả bốn horizon. Tỷ lệ Up nhìn chung cao hơn ở horizon dài nhưng không tăng đơn điệu: H1 56,22%; H5 61,79%; H10 61,20%; H20 66,91%. Ở H20, lớp Up chiếm phần lớn tập Test, nên một mô hình chỉ dự đoán Up cũng có thể đạt Accuracy cao nhưng Balanced Accuracy gần 0.5.
 
 ---
 
@@ -741,26 +741,25 @@ Cách diễn giải phù hợp hơn:
 Cấu trúc chính của dự án được tổ chức theo các tầng dữ liệu, notebook và kết quả:
 
 ```text
-Project/
+PROJECT_FINAL/
 ├── README.md
 │
-├── dataset/
-│   ├── dataset_raw/
-│   ├── features_added_dataset/
-│   ├── date_cleaned_dataset/
-│   │   └── audit/
-│   ├── prepared_data/
+├── data/
+│   ├── eda_2010_2026/
+│   ├── arm/ARM-H1,ARM-H5,ARM-H10,ARM-H20/
 │   └── modeling/
-│       └── horizons/
-│           ├── h1/
-│           ├── h5/
-│           ├── h10/
-│           └── h20/
+│       ├── raw/
+│       ├── support/
+│       ├── provenance/
+│       ├── features/
+│       ├── merged/alignment_logs/
+│       └── horizons/h1,h5,h10,h20/
 │
 ├── notebook/
+│   ├── 00_prepare_data.ipynb
+│   ├── 01_verify_project.ipynb
 │   ├── EDA/
-│   │   └── v2/
-│   ├── Classification/
+│   ├── Classification/H1,H5,H10,H20/
 │   └── ARM/
 │       ├── ARM-H1/
 │       │   └── arm_h1.ipynb
@@ -776,16 +775,20 @@ Project/
 │
 ├── results/
 │   ├── classification/
+│   │   ├── test_model_comparison.csv
+│   │   └── h1,h5,h10,h20/model_A,model_B/
+│   │       ├── <algorithm>_model_and_scaler.pkl
+│   │       └── <algorithm>_test_predictions.csv
 │   └── arm/
-│
-├── docs/
+│       ├── 1_train/
+│       ├── 2_validation/
+│       └── 3_test/
 │
 └── src/
-    ├── crawl_data/
-    └── prepare_data/
+    └── crawl/download_snapshot.py
 ```
 
-> Một số thư mục con có thể thay đổi theo phiên bản thực nghiệm. Các notebook ARM hiện tại đọc dữ liệu theo horizon, chạy Train/Validation riêng, sau đó `ARM-FINAL` thực hiện chọn cấu hình chung và đánh giá Test.
+Mỗi bước ARM có một bảng luật cho từng horizon; `3_test/summary.csv` tổng hợp số luật qua ba bước. Classification có hai file cho mỗi thuật toán, cùng một bảng so sánh chung. Calibration và các bảng trung gian được hiển thị trong notebook.
 
 ---
 
@@ -843,8 +846,8 @@ Quy trình cụ thể phụ thuộc vào môi trường và phiên bản noteboo
 
 Luồng chung:
 
-1. Chuẩn bị các snapshot dữ liệu trong `dataset/dataset_raw/`.
-2. Chạy pipeline chuẩn bị dữ liệu để:
+1. Snapshot đã lưu tại `data/modeling/raw`, `data/modeling/support` và `data/eda_2010_2026`.
+2. `notebook/00_prepare_data.ipynb` xử lý dữ liệu để:
    - tính feature;
    - đồng bộ lịch;
    - tạo target;
@@ -927,10 +930,9 @@ Repository phục vụ bài nộp cuối kỳ gồm các thành phần chính:
 - notebook ARM Final để chọn cấu hình và đánh giá Test;
 - file kết quả và biểu đồ;
 - báo cáo cuối kỳ;
-- slide thuyết trình;
 - các tài liệu mô tả pipeline và kiểm chứng dữ liệu.
 
-Tên file báo cáo và slide cuối cùng nên được cập nhật tại đây theo tên nộp chính thức trước khi push repository.
+Báo cáo cuối kỳ: [52300088_52300138.docx](docs/52300088_52300138.docx).
 
 ---
 
