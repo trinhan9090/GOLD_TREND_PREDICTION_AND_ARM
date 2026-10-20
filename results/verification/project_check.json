@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "notebooks": [
+    {
+      "Notebook": "notebook\\00_prepare_data.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\01_verify_project.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-FINAL\\arm_rule_discovery.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-FINAL\\arm_test.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-H1\\arm_h1.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-H10\\arm_h10.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-H20\\arm_h20.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\ARM\\ARM-H5\\arm_h5.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H1\\classification_A.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H1\\classification_B.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H10\\classification_A.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H10\\classification_B.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H20\\classification_A.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H20\\classification_B.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H5\\classification_A.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\Classification\\H5\\classification_B.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\EDA\\01_gold_eda_v2.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\EDA\\02_oil_eda_v2.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\EDA\\03_dollar_index_eda_v2.ipynb",
+      "Code": "PASS"
+    },
+    {
+      "Notebook": "notebook\\EDA\\04_sp500_eda_v2.ipynb",
+      "Code": "PASS"
+    }
+  ],
+  "all_folders_have_readme": true
+}

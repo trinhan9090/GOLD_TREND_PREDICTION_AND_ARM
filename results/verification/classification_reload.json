@@ -1,0 +1,285 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "Horizon": 1,
+      "Variant": "A",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "A",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "A",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "A",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "A",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "B",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "B",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "B",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "B",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 1,
+      "Variant": "B",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "A",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "A",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "A",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "A",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "A",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "B",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "B",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "B",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "B",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 5,
+      "Variant": "B",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "A",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "A",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "A",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "A",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "A",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "B",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "B",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "B",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "B",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 10,
+      "Variant": "B",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "A",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "A",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "A",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "A",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "A",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "B",
+      "Model": "Naive",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "B",
+      "Model": "RF",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "B",
+      "Model": "LR",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "B",
+      "Model": "RNN",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    },
+    {
+      "Horizon": 20,
+      "Variant": "B",
+      "Model": "LSTM",
+      "Test_Rows": 683,
+      "Status": "PASS"
+    }
+  ]
+}

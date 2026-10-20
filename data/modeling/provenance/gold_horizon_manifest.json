@@ -1,0 +1,9 @@
+{
+  "source": "gold",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=1789776000&period2=1792281600&interval=1d",
+  "exchange_timezone": "America/New_York",
+  "rows": 20,
+  "start": "2026-09-21",
+  "end": "2026-10-16",
+  "retrieved_utc": "2026-10-18T11:10:34.192233+00:00"
+}

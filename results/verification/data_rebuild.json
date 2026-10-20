@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "tables_compared": 14,
+  "method": "Re-executed 00_prepare_data into separate QA output; compared all feature/merged/horizon tables",
+  "tolerance": 1e-10
+}

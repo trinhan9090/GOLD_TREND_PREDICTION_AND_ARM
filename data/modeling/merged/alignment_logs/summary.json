@@ -1,0 +1,22 @@
+{
+  "study_start": "2005-01-03",
+  "study_end": "2026-09-18",
+  "outer_rows": 5473,
+  "gold_original_rows": 5458,
+  "model_rows": 5458,
+  "non_gold_dates": 15,
+  "flat_sessions_retained": 29,
+  "target_counts": {
+    "1": 2879,
+    "0": 2579
+  },
+  "final_gold_label_support_date": "2026-09-21",
+  "filled_source_dates": 28,
+  "original_raw_sha256": {
+    "gold": "3a6150d0b9cf3d68892547388eb3740eb18b663c213719ecf6d87c589ef577d4",
+    "oil": "a87a9b99866a53f05c78bdd00604805b540cd49839836a35c3c439ec9be576b8",
+    "dollar_index": "3ecb430524184ec211f11cec7353bea0871dd3cfbce2e7bb78bbfa1a2e400889",
+    "sp500": "17afbf4a28400c5fb8b3095dd32ff5d168dc946fcb7be8c7e1eb224e071f2b1d"
+  },
+  "policy": "Outer union; external backward as-of; no Gold fill; no flat removal; no model loss on Gold calendar"
+}
